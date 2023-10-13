@@ -11,7 +11,7 @@
 
 // Https server details
 const char server[]   = "api.stacuity.com";
-const char resource[] = "/api/v1/endpoints/b257522a-4d83-4f3e-8954-71d296bbf7c1/keyvalues";
+const char resource[] = "/api/v1/endpoints/101fd3cc-999d-4475-9ff1-c66d8b3c4993/keyvalues";
 const int  port       = 443;
 
 #define LOGGING  // <- Logging is for the HTTP library
@@ -33,7 +33,7 @@ public:
         https.beginRequest();
         int err = https.get(resource);
         https.sendHeader("Content-Type:application/json");
-        https.sendHeader("Authorization: Bearer c7c31bb975594ee0a389d4cdc727c18a");
+        https.sendHeader("Authorization: Bearer d3384905d27a472194f048709c047766");
         https.endRequest();
 
         Serial.print(F("err from https.get was: "));
